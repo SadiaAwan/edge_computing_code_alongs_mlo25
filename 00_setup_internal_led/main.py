@@ -5,9 +5,8 @@ sleep(1)
 
 led_internal = Pin("LED", 1)
 
-led_internal.value(1)
+while True:
+    led_internal.toggle()
+    sleep(.5)
 
-sleep(2)
-
-led_internal.value(0)
 
